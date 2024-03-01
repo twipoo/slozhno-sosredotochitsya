@@ -12,6 +12,7 @@
 }
 
 .header {
+  width: 100%;
   display: grid;
   grid-template-rows: 0.9fr min-content 0.62fr 0fr;
   grid-column: auto;
@@ -28,14 +29,7 @@
 }
 
 .header__theme-menu-button {
-  padding-left: 13px;
-  padding-right: 13px;
-  padding-bottom: 5px;
-}
-
-.header__theme-menu-button {
   background-color: transparent;
-  border: none;
   color: var(--menu-color);
   font-family: var(--font-family);
   font-weight: var(--font-normal);
@@ -43,6 +37,9 @@
   text-transform: lowercase;
   border: 1px solid transparent;
   transition: border-color 0.3s;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 5px;
 }
 
 /* state open */
@@ -465,11 +462,6 @@ footer {
 
   .main {
     gap: 50px;
-  }
-
-  .article__list li {
-    margin: 0;
-    padding: 0;
   }
 
   ul,
