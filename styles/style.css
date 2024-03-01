@@ -12,7 +12,7 @@
 }
 
 .header {
-  width: 100%;
+  width: 100vh;
   display: grid;
   grid-template-rows: 0.9fr min-content 0.62fr 0fr;
   grid-column: auto;
@@ -203,10 +203,6 @@ a.shadow__text:focus-visible {
   font-weight: var(--font-normal);
   line-height: 23.4px;
   color: var(--text-color);
-}
-
-.section__article__content {
-  line-height: 23.4px;
 }
 
 .article__list {
@@ -453,7 +449,6 @@ footer {
     content: "";
     position: absolute;
     border-bottom: 1px solid var(--menu-color);
-    border-left: 1px solid var(--menu-color);
     width: 25px;
     height: 25px;
     top: 633px;
