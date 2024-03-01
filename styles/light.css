@@ -1,12 +1,15 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  .rec-decor {
+    display: none;
+  }
+
+  --background-color-white: #9e7096;
+  --background-image: url(../images/cover-image-light.png);
+  --menu-color: var(--gray);
+  --text-color: var(--gray);
+  --shadow-link: var(--pink-white);
+  --purple-pink-white: var(--pink-white);
+  --black28-gray: var(--gray);
+  --pink-ff8-pink-70: var(--pink-ff8);
+  --purple-pink-title: var(--pink-title);
 }
