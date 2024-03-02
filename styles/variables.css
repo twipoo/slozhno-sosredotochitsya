@@ -1,49 +1,19 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-
 :root {
-  --black28: #000028;
-  --black: #000;
-  --gray: #353430;
-  --pink-70: #ff0070;
-  --pink-white: #f1b2ce;
-  --purple: #db00ff;
-  --pink-ff8: #FF8DCB;
-  --pink-title: #FFC2E6;
-  --font-family: "IBM Plex Mono", sans-serif;
+  --background-image: url(../images/cover-image-dark.png);
+  --menu-color: #FF0070;
+  --background-color: #000028;
+  --text-color: #F1B2CE;
+  --shadow-link: #FF0070;
+  --purple: #DB00FF;
+  --subtitle: #000028;
+  --text-decor: #FF0070;
+  --purple-pink-title: #FF0070;
+  --hover-color: #FF007066;
+  --font-family: "IBM Plex Mono", monospace;
   --font-w-normal: 400;
   --font-w-bold: 700;
   --font-size-default: 18px;
-  --background-color-white: #9e7096;
-  --background-color-dark: #342d4a;
+  --pink-toxic: #FF0070;
+  --footer-color: #DB00FF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-image: url(../images/cover-image-dark.png);
-    --menu-color: var(--pink-70);
-    --background-color: var(--background-color-dark);
-    --text-color: var(--pink-white);
-    --shadow-link: var(--pink-70);
-    --purple-pink-white: var(--purple);
-    --black28-gray: var(--black28);
-    --pink-ff8-pink-70: var(--pink-70);
-    --purple-pink-title: var(--purple);
-  }
-}
-
-@media (prefers-color-scheme: white) {
-  :root {
-    --background-image: url(../images/cover-image-light.png);
-    --menu-color: var(--gray);
-    --background-color: var(--background-color-white);
-    --text-color: var(--gray);
-    --shadow-link: var(--pink-white);
-    --purple-pink-white: var(--pink-white);
-    --black28-gray: var(--gray);
-    --pink-ff8-pink-70: var(--pink-ff8);
-    --purple-pink-title: var(--pink-title);
-  }
-}
