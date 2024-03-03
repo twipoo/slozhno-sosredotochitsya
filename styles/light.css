@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: white) {
+@media (prefers-color-scheme: light) {
   :root {
     --background-image: url(../images/cover-image-light.png);
     --menu-color: #353430;
@@ -8,9 +8,10 @@
     --purple-pink-white: #db00ff;
     --subtitle: #000028;
     --text-decor: #ff0070;
-    --purple-pink-title: #ff0070;
     --hover-color: #32312d66;
-    --footer-color: #db00ff;
+    --title-color: #FFC2E6;
+    --title-shadow: #FF0070;
+
   }
 }
 
@@ -27,7 +28,7 @@
   --purple-pink-white: #db00ff;
   --subtitle: #000028;
   --text-decor: #ff8dcb;
-  --purple-pink-title: #ff0070;
   --hover-color: #32312d66;
-  --footer-color: #ffc2e6;
+  --title-color: #FFC2E6;
+  --title-shadow: #FF0070;
 }

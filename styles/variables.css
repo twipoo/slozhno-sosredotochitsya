@@ -4,16 +4,15 @@
   --background-color: #000028;
   --text-color: #F1B2CE;
   --shadow-link: #FF0070;
-  --purple: #DB00FF;
   --subtitle: #000028;
   --text-decor: #FF0070;
-  --purple-pink-title: #FF0070;
   --hover-color: #FF007066;
   --font-family: "IBM Plex Mono", monospace;
   --font-w-normal: 400;
   --font-w-bold: 700;
   --font-size-default: 18px;
   --pink-toxic: #FF0070;
-  --footer-color: #DB00FF;
+  --title-color: #DB00FF;
+  --title-shadow: #FF0070;
 }
 

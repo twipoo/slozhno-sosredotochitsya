@@ -12,12 +12,12 @@
 }
 
 .header {
-  height: 80.9vw;
+  min-height: 768px;
   display: grid;
-  grid-template-rows: 1.23fr min-content 1fr;
+  grid-template-rows: 0.94fr min-content 1fr;
   position: relative;
   padding: 20px 0px 0px 0px;
-  gap: 114px;
+  margin-block-end: 60px;
 }
 
 .header__theme-menu-list {
@@ -85,8 +85,8 @@
 .rec-decor::before {
   position: absolute;
   content: "rec";
-  top: 22px;
-  right: 48px;
+  top: 2.8%;
+  right: 4.7%;
   color: var(--text-decor);
   font-family: var(--font-family);
   font-style: normal;
@@ -97,8 +97,8 @@
 .rec-decor::after {
   position: absolute;
   content: "";
-  top: 28px;
-  right: 29px;
+  top: 3.8%;
+  right: 2.7%;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -113,8 +113,8 @@
   border-right: 1px solid var(--menu-color);
   width: 25px;
   height: 25px;
-  top: 20px;
-  right: 20px;
+  top: 2.58%;
+  right: 2%;
 }
 
 .decorated-zone::after {
@@ -124,11 +124,11 @@
   border-left: 1px solid var(--menu-color);
   width: 25px;
   height: 25px;
-  top: 724px;
-  left: 20px;
+  top: 94.2%;
+  left: 2%;
 }
 
-.title__decor {
+.title-decor {
   background-color: var(--text-decor);
 }
 
@@ -136,7 +136,7 @@
 
 .title {
   font-weight: 700;
-  color: var(--purple);
+  color: var(--title-color);
   text-shadow: 4px 4px 0px var(--pink-toxic);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   justify-self: start;
@@ -151,16 +151,18 @@
   line-height: 23.4px;
   color: var(--subtitle);
   justify-self: end;
-  align-self: start;
+  align-self: center;
   inline-size: clamp(355px, calc(100% / 2), 491px);
   max-width: 498px;
   margin-inline-end: 20px;
+  margin-block-end: 21px;
 }
 
 .main {
   display: flex;
   flex-direction: column;
   gap: 80px;
+  overflow: auto;
 }
 
 .section {
@@ -251,8 +253,10 @@
 .footer {
   position: relative;
   display: grid;
-  grid-template-rows: 93vh;
+  grid-template-rows: 1fr;
   margin-top: 60px;
+  height: 100vh;
+  overflow: auto;
 }
 
 .image {
@@ -268,34 +272,55 @@
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 129.53px;
   font-weight: var(--font-w-bold);
-  color: var(--footer-color);
-  text-shadow: 2px 2px 0px var(--purple-pink-title);
+  color: var(--title-color);
+  text-shadow: 2px 2px 0px var(--title-shadow);
   align-self: center;
   justify-self: center;
 }
 
 @media screen and (max-width: 768px) {
   .header {
-    grid-template-rows: 33.6vh min-content 1fr 0.82fr;
-    gap: 147px;
-    height: auto;
+    grid-template-rows: 0.96fr min-content 1fr;
+    min-height: 1024px;
+  }
+
+  .decorated-zone::before {
+    top: 2%;
+    right: 2.6%;
+  }
+
+  .decorated-zone::after {
+    top: 95.6%;
+    left: 2.6%;
+  }
+
+  .rec-decor::before {
+    top: 2%;
+    right: 6.3%;
+  }
+
+  .rec-decor::after {
+    top: 2.7%;
+    right: 3.6%;
   }
 
   .header__theme-menu {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: end;
     margin-inline-end: 20px;
-    margin-block-end: 9px;
+    margin-block-start: 13px;
   }
 
   .header__theme-menu-list {
     flex-direction: column;
+    gap: 9px;
   }
 
   .subtitle {
     max-width: 364px;
+    margin-block-end: 38px;
   }
 
   .section:first-child {
@@ -316,21 +341,20 @@
     gap: 20px;
   }
 
-  .decorated-zone::after {
-    top: 978px;
-  }
-
   .footer {
-    grid-template-rows: 123vh;
+    grid-template-rows: 1fr;
+    min-height: 1024px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .header {
-    grid-template-rows: 37.2vh min-content 1fr 0.82fr;
+    min-height: 668px;
+    grid-template-rows: 0.29fr min-content 1fr;
     gap: 0px;
     padding-inline-start: 10px;
     padding-block-end: 10px;
+    margin-block-end: 40px;
   }
 
   .decorated-zone::before {
@@ -353,14 +377,18 @@
     left: 10px;
   }
 
+  .subtitle {
+    margin-block-end: 0;
+  }
+
   .header__theme-menu {
     margin-inline-end: 10px;
     margin-block-end: 0;
+    margin-block-start: 54px;
   }
 
   .title {
     padding-top: 65px;
-    margin-bottom: 53px;
     line-height: 96px;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
@@ -409,10 +437,13 @@
   }
 
   .footer {
+    min-height: 668px;
     margin-top: 40px;
   }
-  
+
   .footer__title {
-    padding-top: 161px;
+    line-height: 96px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
+
 }
