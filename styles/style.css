@@ -9,6 +9,7 @@
   background-position: center;
   font-family: var(--font-family);
   font-size: var(--font-size-default);
+  background-attachment: fixed;
 }
 
 .header {
@@ -377,10 +378,6 @@
     left: 10px;
   }
 
-  .subtitle {
-    margin-block-end: 0;
-  }
-
   .header__theme-menu {
     margin-inline-end: 10px;
     margin-block-end: 0;
@@ -396,6 +393,7 @@
   .subtitle {
     max-width: 364px;
     margin-inline-end: 10px;
+    margin-block-end: 0;
   }
 
   .main {
