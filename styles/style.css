@@ -1,15 +1,14 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-attachment: fixed;
   background-image: var(--background-image), url(../images/cover-image.png);
   background-color: var(--background-color);
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   font-family: var(--font-family);
   font-size: var(--font-size-default);
-  background-attachment: fixed;
 }
 
 .header {
@@ -443,5 +442,4 @@
     line-height: 96px;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
-
 }
