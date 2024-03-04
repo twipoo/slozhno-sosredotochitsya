@@ -347,6 +347,17 @@
   }
 }
 
+@media screen and (max-width: 398px) {
+  .section {
+    padding: 0 5px 0 5px; /*наверное было бы лучше задать относительные велечины за место медиа запроса */
+    gap: 5px;
+  }
+
+  .section:nth-child(3) {
+    gap: 5px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .header {
     min-height: 668px;
@@ -355,6 +366,10 @@
     padding-inline-start: 10px;
     padding-block-end: 10px;
     margin-block-end: 40px;
+  }
+
+  .section:nth-child(3) {
+    gap: 20px;
   }
 
   .decorated-zone::before {
