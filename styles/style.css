@@ -82,6 +82,10 @@
 /* state close */
 /* decoration open */
 
+.rec-decor {
+  visibility: var(--rec-hidder);
+}
+
 .rec-decor::before {
   position: absolute;
   content: "rec";

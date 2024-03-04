@@ -13,5 +13,6 @@
   --font-size-default: 18px;
   --title-color: #DB00FF;
   --title-shadow: #FF0070;
+  --rec-hidder: visibility;
 }
 

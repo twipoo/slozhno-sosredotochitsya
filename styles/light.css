@@ -11,14 +11,11 @@
     --hover-color: #32312d66;
     --title-color: #FFC2E6;
     --title-shadow: #FF0070;
+    --rec-hidder: hidden;
   }
 }
 
 .page.theme_light {
-  .rec-decor {
-    visibility: hidden;
-  }
-
   --background-image: url(../images/cover-image-light.png);
   --menu-color: #353430;
   --background-color: #fff1f7;
@@ -30,4 +27,5 @@
   --hover-color: #32312d66;
   --title-color: #FFC2E6;
   --title-shadow: #FF0070;
+  --rec-hidder: hidden;
 }
